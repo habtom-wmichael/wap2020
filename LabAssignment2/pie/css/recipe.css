@@ -1,0 +1,31 @@
+.comments{
+    right: 50px;
+}
+.article1{
+    background-color:rgb(233, 233, 134);
+}
+h1{
+    text-align: center;
+    font-size: 22pt;
+    background-color: rgb(240, 240, 240);
+    color:rgb(164, 164, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h2{
+    color:rgb(164, 164, 0);
+    text-align: left;
+    font-size: 18pt;
+    background-color: rgb(240, 240, 240);
+}
+a{
+    color:limegreen;
+    
+}
+img{
+    height: 28vh;
+    width: 25vw;
+    /* padding: 1px; */
+}
+body{
+background-color: #eeedde;
+}

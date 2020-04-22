@@ -1,0 +1,37 @@
+
+
+body{
+    background-color: #302e18;
+    }
+em{
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(106, 80, 201);
+}
+i{
+    font-style: italic;
+}
+ol{
+    list-style-type: upper-roman;
+}
+a:visited{
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    color: rgb(133, 91, 173);
+}
+a:link{
+    font-family: 'Times New Roman', Times, serif;
+    color: darkblue;
+
+}
+
+
+
+.container{
+    background-color: rgb(43, 34, 34);
+    
+}
+img{
+    height: 10vh;
+    width: 10vw;
+
+}

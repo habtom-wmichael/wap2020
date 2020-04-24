@@ -6,7 +6,7 @@
 }
 .container {
     background-color: #ffffff;
-overflow: hidden;
+    overflow: hidden;
 }
 body{
     background-color: rgb(239, 247, 247);
@@ -34,18 +34,15 @@ span#right-footertext{
     margin-right: 1em;
 }
 
-form-group col-md-1{
-
+/* form-group col-md-1{
+float: right;
 text-align: center;
-
+overflow: hidden;
+} */
+.contents{
+    padding-top: 40px;
 }
 #btns{
-  /* padding: 20px; */
-   left: 10em;
-}
-.contents{
-    /* flex-wrap: wrap; */
-    padding-top: 40px;
-   
-}
+    
 
+}

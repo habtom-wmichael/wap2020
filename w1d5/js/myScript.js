@@ -213,7 +213,7 @@ function printToConsole(){
 
 }
 
-//#15
+//#15 
 function displayTime(){
     let webform2AddBtn = document.getElementById("poductbtn").onclick=displayClock;
 }
@@ -221,9 +221,9 @@ function displayTime(){
 function displayClock(){
     
     let today = new Date();
-    let hour = date.getHours();
-  let min = date.getMinutes();
-  let sec = date.getSeconds();
+    let hour = today.getHours();
+  let min = today.getMinutes();
+  let sec = today.getSeconds();
 
   hour = updateTime(hour);
   min = updateTime(min);

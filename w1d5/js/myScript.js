@@ -220,22 +220,16 @@ function displayTime(){
 
 function displayClock(){
     
-    let today = new Date();
-    let hour = today.getHours();
-  let min = today.getMinutes();
-  let sec = today.getSeconds();
+    var date = new Date();
+    var hours = date.getHours();
+    var days = date.getDay(); 
+    var minutes = date.getMinutes();
+    var ampm = hours >= 12 ? 'pm' : 'am';
+    hours = hours % 12;
+    hours = hours ? hours : 12; // the hour '0' should be '12'
+    minutes = minutes < 10 ? '0'+minutes : minutes;
+    var strTime = date + ' ' + hours + ':' + minutes + ' ' + ampm;
+    return strTime;
 
-  hour = updateTime(hour);
-  min = updateTime(min);
-  sec = updateTime(sec);
-
-  var displayer = document.getElementById("myWatch").innerHTML=hour +":" + min + ":" +sec;
+  var displayer = document.getElementById("myWatch").innerHTML+=date + ' ' + hours + ':' + minutes + ' ' + ampm;;
 }
-function updateTime(k) {
-    if (k < 10) {
-      return "0" + k;
-    }
-    else {
-      return k;
-    }
-  }

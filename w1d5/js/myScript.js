@@ -213,24 +213,24 @@ function printToConsole(){
 
 }
 
-//#15 
+//#15 will display Time in the webform2.html
 function displayTime(){
     let webform2AddBtn = document.getElementById("poductbtn").onclick=displayClock;
 }
 
 function displayClock(){
     
-    var date = new Date();
-    var hours = date.getHours();
-    var days = date.getDay(); 
-    var minutes = date.getMinutes();
-    var ampm = hours >= 12 ? 'pm' : 'am';
+    let date = new Date();
+    let hours = date.getHours();
+    let days = date.getDay(); 
+    let minutes = date.getMinutes();
+    let ampm = hours >= 12 ? 'pm' : 'am';
     hours = hours % 12;
     hours = hours ? hours : 12; // the hour '0' should be '12'
     minutes = minutes < 10 ? '0'+minutes : minutes;
-    var strTime = date + ' ' + hours + ':' + minutes + ' ' + ampm;
+    let strTime = date + ' ' + hours + ':' + minutes + ' ' + ampm;
     
 
-  var displayer = document.getElementById("myWatch").innerHTML+=date + ' ' + hours + ':' + minutes + ' ' + ampm;;
+  let displayer = document.getElementById("myWatch").innerHTML+=date + ' ' + hours + ':' + minutes + ' ' + ampm;;
   return strTime;
 }

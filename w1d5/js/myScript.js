@@ -215,19 +215,19 @@ function printToConsole(){
 
 //#15
 function displayTime(){
-    const webform2AddBtn = document.getElementById("poductbtn").onclick=displayClock;
+    let webform2AddBtn = document.getElementById("poductbtn").onclick=displayClock;
 }
 
 function displayClock(){
     
-    var today = new Date();
-    var hour = date.getHours();
-  var min = date.getMinutes();
-  var sec = date.getSeconds();
+    let today = new Date();
+    let hour = date.getHours();
+  let min = date.getMinutes();
+  let sec = date.getSeconds();
 
-  hour = updateTime(hour);
-  min = updateTime(min);
-  sec = updateTime(sec);
+//   hour = updateTime(hour);
+//   min = updateTime(min);
+//   sec = updateTime(sec);
 
   var displayer = document.getElementById("myWatch").innerHTML=hour +":" + min + ":" +sec;
 }

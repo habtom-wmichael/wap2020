@@ -229,7 +229,8 @@ function displayClock(){
     hours = hours ? hours : 12; // the hour '0' should be '12'
     minutes = minutes < 10 ? '0'+minutes : minutes;
     var strTime = date + ' ' + hours + ':' + minutes + ' ' + ampm;
-    return strTime;
+    
 
   var displayer = document.getElementById("myWatch").innerHTML+=date + ' ' + hours + ':' + minutes + ' ' + ampm;;
+  return strTime;
 }

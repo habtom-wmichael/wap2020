@@ -65,12 +65,23 @@ function calculateSumAndProduct(arr){
 console.log(product);
 }
 function sum(arr){
-    return arr.reduce(function(preVal,elem,i,array){
-        return preVal+elem;
-    })
+    let totalValue=0;
+    for (let index = 0; index < arr.length; index++) {
+        totalValue+=arr[index];
+    }
+    console.log(totalValue);
+return totalValue;
 }
+
+
 function multiply(arr){
-    console.log(arr.reduce((x,y)=>x*y));
+    let productValue=1;
+for (let index = 0; index < arr.length; index++) {
+    productValue= productValue*arr[index];
+    
+}
+console.log(productValue);
+    return productValue;
 }
 
 // #5 reverse function
@@ -186,3 +197,45 @@ function printFibo(n,a,b){
         n--;
     }
 }
+
+//# 14
+function printDoSomething(){
+    const webform1Submit= document.getElementById("submitwenform1").onclick=printToConsole;
+    
+}
+function printToConsole(){
+    const emailInputValue = document.getElementById("exampleInputEmail1").value;
+   const passwordValue = document.getElementById("exampleInputPassword1").value;
+   const urlValue = document.getElementById("exampleInputUrl1").value;
+    console.log(emailInputValue);
+    console.log(passwordValue);
+    console.log(urlValue);
+
+}
+
+//#15
+function displayTime(){
+    const webform2AddBtn = document.getElementById("poductbtn").onclick=displayClock;
+}
+
+function displayClock(){
+    
+    var today = new Date();
+    var hour = date.getHours();
+  var min = date.getMinutes();
+  var sec = date.getSeconds();
+
+  hour = updateTime(hour);
+  min = updateTime(min);
+  sec = updateTime(sec);
+
+  var displayer = document.getElementById("myWatch").innerHTML=hour +":" + min + ":" +sec;
+}
+function updateTime(k) {
+    if (k < 10) {
+      return "0" + k;
+    }
+    else {
+      return k;
+    }
+  }

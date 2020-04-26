@@ -225,9 +225,9 @@ function displayClock(){
   let min = date.getMinutes();
   let sec = date.getSeconds();
 
-//   hour = updateTime(hour);
-//   min = updateTime(min);
-//   sec = updateTime(sec);
+  hour = updateTime(hour);
+  min = updateTime(min);
+  sec = updateTime(sec);
 
   var displayer = document.getElementById("myWatch").innerHTML=hour +":" + min + ":" +sec;
 }

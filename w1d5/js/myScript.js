@@ -1,8 +1,8 @@
 "use strict"
-console.alert("page is loading!")
+alert("page is loading!");
 
 // functional programming 
-// const a=[1,2,3,4,5,6];
+// const a=[1,2,3,4,5,6];//
 
 // const b=a.map(x => x*x).filter(x=>x%2!=0);
 // console.log(b);

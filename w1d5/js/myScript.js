@@ -232,5 +232,6 @@ function displayClock(){
     
 
   let displayer = document.getElementById("myWatch").innerHTML+=date + ' ' + hours + ':' + minutes + ' ' + ampm;;
-  return strTime;
+  setTimeout(readTime,1000);
 }
+

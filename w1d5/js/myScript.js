@@ -226,6 +226,10 @@ function displayClock(){
         document.getElementById("myWatch").innerHTML=date.toString();
     },1000);
     
+    setInterval(function(){
+        let date = new Date();
+        document.getElementById("myWatch1").innerHTML=date.toString();
+    },1000);
     // let hours = date.getHours();
     // let days = date.getDay(); 
     // let minutes = date.getMinutes();

@@ -1,5 +1,6 @@
-"use strict"
-alert("page is loading!");
+
+ "use strict"
+// alert("page is loading!");
 
 // functional programming 
 // const a=[1,2,3,4,5,6];//
@@ -214,24 +215,29 @@ function printToConsole(){
 }
 
 //#15 will display Time in the webform2.html
-function displayTime(){
-    let webform2AddBtn = document.getElementById("poductbtn").onclick=displayClock;
-}
+window.onload = function(){
+document.getElementById("poductbtn").onclick=displayClock;
+
 
 function displayClock(){
     
-    let date = new Date();
-    let hours = date.getHours();
-    let days = date.getDay(); 
-    let minutes = date.getMinutes();
-    let ampm = hours >= 12 ? 'pm' : 'am';
-    hours = hours % 12;
-    hours = hours ? hours : 12; // the hour '0' should be '12'
-    minutes = minutes < 10 ? '0'+minutes : minutes;
-    let strTime = date + ' ' + hours + ':' + minutes + ' ' + ampm;
+    setInterval(function(){
+        let date = new Date();
+        document.getElementById("myWatch").innerHTML=date.toString();
+    },1000);
+    
+    // let hours = date.getHours();
+    // let days = date.getDay(); 
+    // let minutes = date.getMinutes();
+    // let ampm = hours >= 12 ? 'pm' : 'am';
+    // hours = hours % 12;
+    // hours = hours ? hours : 12; // the hour '0' should be '12'
+    // minutes = minutes < 10 ? '0'+minutes : minutes;
+    // let strTime = date + ' ' + hours + ':' + minutes + ' ' + ampm;
     
 
-  let displayer = document.getElementById("myWatch").innerHTML+=date + ' ' + hours + ':' + minutes + ' ' + ampm;;
-  setTimeout(readTime,1000);
-}
+  
 
+  //   setTimeout(readTime,1000);
+}
+}

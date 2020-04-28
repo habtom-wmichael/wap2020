@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Text Decorator</title>
+		<link href="./css/decoratemytext.css" type="text/css" rel="stylesheet" />
+
+		
+
+
+
+		<!-- link to your script file here -->
+		
+		<script defer src="./js/decoratemytext.js"></script>
+		<script defer src="./js/clock.js"></script>
+		
+	</head>
+
+	<body>
+		<h1>Text Decorator</h1>
+		<div>
+			<img src="./image/decorated.gif" alt="decoration">
+			<h1 id="clock" onload="startTimer();"></h1>
+			<fieldset>
+				<legend class="legend">Text</legend>
+			<textarea name="txtarea" id="txtarea1" id="" rows="4" cols="30" >
+				Sample Item 1
+				Sample Item 2
+			</textarea>
+			</fieldset>
+			<fieldset>
+				<legend class="legend">Text</legend>
+			<button onclick="displayHello();">Bigger Decorations!</button><br>
+			<input type="checkbox" name="bling" id="bling" onchange="popMsg();">
+			<label for="bling">Bling</label>
+			</fieldset>
+		</div>
+
+		
+	</body>
+</html>

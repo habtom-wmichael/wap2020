@@ -28,5 +28,9 @@ textarea {
     font-size: 12pt;
    text-align: right;
 }
-
+p{
+	text-align: center;
+	color: #000;
+	
+}
 

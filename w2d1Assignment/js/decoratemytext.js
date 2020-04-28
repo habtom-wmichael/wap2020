@@ -31,17 +31,11 @@ function displayHello(){
     function startTimer(){
       setInterval(function(){
         var txtArea = document.getElementById("txtarea1");
-        txtArea.style.fontSize =parseInt(txtArea.style.fontSize)+ 2 + "px";
+       // txtArea.style.fontSize =parseInt(txtArea.style.fontSize)+ 2 + "px";
         let today= new Date();
         document.getElementById("clock").innerHTML=today.toString();
     },500);
-      // var txtArea = document.getElementById("txtarea1");
-      // let today= new Date();
-      // let currentTime= today.toString();
-      // txtArea.style.fontSize =parseInt(txtArea.style.fontSize)+ 2 + "px";
-      // //let t = `${n.getFullYear()}-${n.getMonth()}-${n.getDate()} ${n.getHours()}:${n.getMinutes}:${n.getSeconds}`;
-      // document.getElementById('clock').innerHTML=t;
-      // setTimeout(readTime,500);
+      
   
   }
 

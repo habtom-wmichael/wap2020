@@ -1,0 +1,25 @@
+Define Global scope and LocalScope in javascipt?
+
+There are three types of scope in JavaScript — 1) Global Scope, 2) Function Scope, and, 3) Block Scope.
+1. Global Scope. Any variable that's not inside any function or block (a pair of curly braces), is inside the global scope. ...
+2. Local Scope or Function Scope.
+    Variables declared inside a function is inside the local scope. They can only be accessed from within that function, that means they can’t be accessed from the outside code. For example:
+    function greet() {
+    var greeting = 'Hello World!';
+    console.log(greeting);
+    }
+    // Prints 'Hello World!'
+    greet();
+    // Uncaught ReferenceError: greeting is not defined
+    console.log(greeting);
+3. Block Scope.
+   ES6 introduced let and const variables, unlike var variables, they can be scoped to the nearest pair of curly braces. That means, they can’t be accessed from outside that pair of curly braces. For example:
+    {
+    let greeting = 'Hello World!';
+    var lang = 'English';
+    console.log(greeting); // Prints 'Hello World!'
+    }
+    // Prints 'English'
+    console.log(lang);
+    // Uncaught ReferenceError: greeting is not defined
+    console.log(greeting);

@@ -1,0 +1,5 @@
+The free variable is counter
+
+what is free variable?
+free variable is a variable which is not defined in the parameter of the function 
+and not also a local variable.

@@ -1,4 +1,4 @@
-"use strict"
+// "use strict"
 
 
  
@@ -51,4 +51,41 @@ function displayHello(){
     // }
     // reverString("abc");
 
+
+
+  // x=1;
+  // var a=5;
+  // var b=10;
+  // var c= function(a,b,c){
+  //  document.write(x);
+//   console.log(a);
+//   console.log(x);
+//    // document.write(a);
+//     var f = function(a,b,c){
+//       b=a;
+//       // document.write(b);
+//       console.log(b);
+//       b=c;
     
+//       var x=5;
+//     }
+//     f(a,b,c);
+//     // document.write(b);
+//     console.log(b);
+//     var x=10;
+//   }
+//   c(8,9,10);
+//   // document.write(b);
+//   console.log(b);
+//  // document.write(x);
+//   console.log(x);
+
+
+var foo ='1';
+function bar(){
+  if(!foo){
+    var foo='10';
+  }
+  alert(foo);
+}
+bar();

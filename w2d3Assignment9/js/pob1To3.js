@@ -7,7 +7,7 @@
     "use strict"
 
 const person ={
-    name: "",
+    name:"",
     dateOfBirth:"",
     getName: function(){
         return this.name;
@@ -20,30 +20,34 @@ const person ={
 const john= Object.create(person);
 john.setName("John");//
 john.dateOfBirth=("1998-12-10");
-console.log("The person's name is " +john.getName());
-console.log(john.getName() +"was born " + john.dateOfBirth);
+console.log(`The person's name is  ${john.getName()}`);
+console.log(`${john.getName()} "was born " ${john.dateOfBirth}`);
 
 // 2 employee
 
 
 
 let employee={
-    salary:0,
-    hireDate: null,
-    doJob: function(jobTitle){
-log.console(this.getName +"is a"+ jobTitle + "who earns " +this.salary);
+    salary:0.0,
+    hireDate: new Date(),
+     doJob: function(jobTitle){
+     return (`${this.getName} is a ${jobTitle} who earns ${this.salary}`);
 
     }
+   
 }
+// employee.doJob=function(){
+//     console.log (`${this.getName} is a ${jobTitle} who earns ${this.salary}`);
 
+//     };
+    
 employee=Object.create(person);
+employee.setName("Anna");
+employee.dateOfBirth="1990-05-08";
+employee.salary=249995.50;
 
 
-let anna = Object.create(employee);
-anna.setName("Anna");
-anna.dateOfBirth="1990-05-08";
-anna.salary=249995.50;
-//anna.doJob("Programmer");
+
 
 //3 using Constructor
 
@@ -55,7 +59,7 @@ function Person2(name,dateOfBirth){
 
 Person2.prototype.toString=  
 function toStrinf(){
-    return ("name:" +this.name+"," +" DateOfBirth:"+this.dateOfBirth );
+    return (`name: ${this.name} DateOfBirth: ${this.dateOfBirth}` );
 }
 
 let peter = new Person2("Peter");

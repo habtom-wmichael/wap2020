@@ -51,4 +51,8 @@ text-align: center;
 }
 #formResult{
     color: green;
+    border-left-width:10px;
+    border-left-color: blueviolet;
+    display: grid;
+grid-template-columns: 80px 200px auto 40px;
 }

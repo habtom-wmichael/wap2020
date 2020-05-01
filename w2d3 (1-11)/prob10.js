@@ -1,3 +1,7 @@
+/**
+ * @habtom
+ * problem10.js
+ */
 var employee=(function() {
     var privateName="Default";
     var privateAge=0;

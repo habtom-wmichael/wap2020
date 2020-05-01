@@ -22,8 +22,6 @@ console.log(add5())
 console.log(add5())
 console.log(add5())
 console.log(add5())
-
-
 var add7 = make_adder(7);
 add7();
 add7();

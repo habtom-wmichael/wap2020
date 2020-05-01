@@ -1,3 +1,9 @@
+/**
+ * @habtom
+ * problem6.js
+ */
+
+
 //  var counter=0;
 // var count={
     
@@ -23,3 +29,5 @@ console.log(count.add());
 console.log(count.add());
 
 console.log(count.reset());
+
+// or 

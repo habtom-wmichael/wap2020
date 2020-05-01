@@ -1,3 +1,8 @@
+/**
+ * @habtom
+ * problem11.js
+ */
+
 var employee=(function() {
     var privateName;
     var privateAge;

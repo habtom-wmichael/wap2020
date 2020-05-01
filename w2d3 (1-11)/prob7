@@ -1,5 +1,10 @@
 The free variable is counter
 
 what is free variable?
-free variable is a variable which is not defined in the parameter of the function 
-and not also a local variable.
+free variable is a variable which is neither declared inside a function(inner) nor passed 
+as an parameter (arguement) to the function.
+a clusure is defined when a function (inner) that has free variables is defined, the free variables 
+are variables from the surrounding environment.
+
+a closure instance is created when an inner function assigned to a variable and attached to it self to 
+free variables.

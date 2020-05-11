@@ -43,7 +43,7 @@ employee.doJob= function(jobTitle){
     
 const anna=Object.create(employee);
 anna.setName("Anna");
-//anna.dateOfBirth="1990-05-08";
+anna.dateOfBirth="1990-05-08";
 anna.salary=249995.50;
 anna.doJob("Programmer")
 
@@ -59,11 +59,44 @@ function Person2(name,dateOfBirth){
 
 Person2.prototype.toString=  
 function toStrinf(){
-    return (`name: ${this.name} DateOfBirth: ${this.dateOfBirth}` );
-   // return `{"Name":"${this.name} "DateOfBirth":"${new Intel.DateTimeFormat().format(this.dateOfBirth) }"}`
+    //return (`name: ${this.name} DateOfBirth: ${this.dateOfBirth}` );
+    return `{"Name":"${this.name} "DateOfBirth":"${new Intl.DateTimeFormat().format(this.dateOfBirth)}"}`
 }
 
-let peter = new Person2("Peter","1985-10-10");
-//peter.dateOfBirth=("1985-10-10");
+let peter = new Person2("Peter");
+peter.dateOfBirth=new Date("1985-10-10");
 console.log(peter.toString());
 
+
+
+//***********++++++++++++==================************************************ */
+function b() {
+    console.log(x);
+    function a() {
+      console.log(x); //20
+    }
+    a();
+  }
+  var x = 20;
+  b();
+  
+
+
+
+
+
+
+  class User {
+    constructor(name = "Anonymous") {
+    this.name = name; }
+    sayHi() {
+    console.log(`Hello, ${this.name}!`);
+    }}
+   const fred = new User(); 
+    console.log(fred); 
+    console.log(fred.__proto__); 
+    console.log(User.prototype);
+     fred.sayHi();
+  const  bob = new User("Bob"); 
+    console.log(bob);
+     bob.sayHi();

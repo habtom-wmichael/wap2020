@@ -26,7 +26,7 @@ var employee=(function() {
         return getName;
     }
     function publicIncreaseSalary(percentage){
-        return percentage * getSalary;
+        return getSalary + percentage * getSalary;
     }
     function publicIncrementAge(){
         return getAge +1;

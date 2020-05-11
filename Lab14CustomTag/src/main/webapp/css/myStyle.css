@@ -1,0 +1,13 @@
+body{
+background-color: cadetblue;
+    align-items: center;
+}
+h1{
+    float: contour;
+}
+.container{
+    border-radius: 1em;
+    background-color: darkgray;
+    color:white;
+}
+h1{color: darkcyan}

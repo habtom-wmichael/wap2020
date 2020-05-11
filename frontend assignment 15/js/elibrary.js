@@ -61,11 +61,12 @@
 
     $("#buttonNewBook").click(function(event){
         event.preventDefault();
-      
+        $("#buttonNewBook").attr("data-formstate","on");
+        $("#buttonNewBook").text("Close");
         $("#addNewBookForm").show();
         $("#bookDatTable").hide();
         const formstate = $("#buttonNewBook").attr("data-formstate");
-        if(formstate=="off"){
+        if(formstate=="on"){
             $("#buttonNewBook").text("Close");
             $("#listOfBooks").text("New Book Registration Form");
             $("#divNewBookForm").show("slow");
